@@ -105,7 +105,7 @@ public class buzzer extends AppCompatActivity {
 
                         }
                         else{
-                            Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
                         }
 
                     }
