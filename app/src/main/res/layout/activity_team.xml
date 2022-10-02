@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#e4c769"
+    tools:context=".team">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="330dp"
+        android:layout_height="319dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166">
+
+        <EditText
+            android:id="@+id/game_name"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100px"
+            android:gravity="center"
+            android:hint="Enter game name"
+            android:singleLine="true"
+            android:textColor="#444340"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="214dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100px"
+            android:gravity="center"
+            android:hint="Enter your name"
+            android:singleLine="true"
+            android:textColor="#444340"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_name" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75px"
+            android:background="@drawable/rounded_button"
+            android:text="Start"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/bee" />
+</androidx.constraintlayout.widget.ConstraintLayout>
